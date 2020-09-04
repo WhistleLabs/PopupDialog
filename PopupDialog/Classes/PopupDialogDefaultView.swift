@@ -70,7 +70,7 @@ final public class PopupDialogDefaultView: UIView {
     // MARK: - Views
 
     /// The view that will contain the image, if set
-    internal lazy var imageView: UIImageView = {
+    public lazy var imageView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.contentMode = .scaleAspectFit
@@ -79,7 +79,7 @@ final public class PopupDialogDefaultView: UIView {
     }()
 
     /// The title label of the dialog
-    internal lazy var titleLabel: UILabel = {
+    public lazy var titleLabel: UILabel = {
         let titleLabel = UILabel(frame: .zero)
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.numberOfLines = 0
@@ -90,7 +90,7 @@ final public class PopupDialogDefaultView: UIView {
     }()
 
     /// The message label of the dialog
-    internal lazy var messageLabel: UILabel = {
+    public lazy var messageLabel: UILabel = {
         let messageLabel = UILabel(frame: .zero)
         messageLabel.translatesAutoresizingMaskIntoConstraints = false
         messageLabel.numberOfLines = 0
